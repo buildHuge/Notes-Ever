@@ -28,7 +28,7 @@ Now doing `ls` should output the contents `application.py, /notes_ever, sample.e
 
 In Git usually `origin` is referred to as your forked copy and `upstream` is the original repository from which you forked. And `origin` and `upstream` are called remotes.
 
-So in our case `upstream` is the repo located at https://github.com/buildHuge/Notes-Ever and `origin` is your forked copy at https://github.com/<YOUR_GITHUB_USERNAME>/Notes-Ever.
+So in our case `upstream` is the repo located at https://github.com/buildHuge/Notes-Ever and `origin` is your forked copy at `https://github.com/<YOUR_GITHUB_USERNAME>/Notes-Ever`.
 
 Git automatically configures the `origin` remote by pointing to the repo from where you cloned. We need to add `upstream` remote by ourselves.
 
@@ -111,10 +111,12 @@ git commit -m "A short descriptive message"
 git push origin <NAME_0F_BRANCH_YOU_CREATED>
 ```
 
-Now go to https://github.com/<YOUR_GITHUB_USERNAME>/Notes-Ever and click on `Compare and Pull Request` to start creating a PR. 
+Now go to `https://github.com/<YOUR_GITHUB_USERNAME>/Notes-Ever` and click on `Compare and Pull Request` to start creating a PR. 
 
 ![a screenshot showing compare and pull request button](docs/origin_pr.png)
 
 Write a good title and please describe the changes you made. Write `Closes #IssueNumber` to close the issue you worked on when the PR gets merged. For e.g. if I worked on issue #3 then writing `Closes #3` will close issue #3 when my PR gets merged. 
+
+![a screenshot showing create a pull request view](docs/create_pr.png)
 
 #### Congratulations! You have successfully contributed to one of the best Fask project. You are a Champion! :clap:
