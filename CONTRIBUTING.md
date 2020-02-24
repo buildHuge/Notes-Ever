@@ -1,8 +1,8 @@
-# Contributing
+# Contributing :sparkles:
 
 Hi :raised_hands:. We are delighted to see your interest in helping our team build a complete solution for teachers to share notes, assignments with students. Our web app is based on Python's flask framework and its deployed to Heroku: https://notes-ever.herokuapp.com.
 
-Let's get started with setting up the development enviornment for our app to run locally on your system. Please read all the steps below carefully. 
+Let's get started with setting up the development enviornment for our app to run locally on your system. Please read all the steps below carefully.
 
 **Note: we recommend executing all the below commands in Bash or any Unix based Terminal. Also, launch your terminal with administrative privileges.** 
 
@@ -110,3 +110,11 @@ git commit -m "A short descriptive message"
 # Push to origin to create a PR
 git push origin <NAME_0F_BRANCH_YOU_CREATED>
 ```
+
+Now go to https://github.com/<YOUR_GITHUB_USERNAME>/Notes-Ever and click on `Compare and Pull Request` to start creating a PR. 
+
+![a screenshot showing compare and pull request button](docs/origin_pr.png)
+
+Write a good title and please describe the changes you made. Write `Closes #IssueNumber` to close the issue you worked on when the PR gets merged. For e.g. if I worked on issue #3 then writing `Closes #3` will close issue #3 when my PR gets merged. 
+
+#### Congratulations! You have successfully contributed to one of the best Fask project. You are a Champion! :clap:
