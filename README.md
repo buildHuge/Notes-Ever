@@ -1,5 +1,14 @@
-A web app for teachers and students. Teachers can upload notes and students can see, download them.
+# Notes Ever
 
-Tasks for today:
+A complete solution for teachers to share notes with students: https://notes-ever.herokuapp.com.
 
-- [ ] Think about app and Database design
+## Contributing
+
+Read [Contributing.md](CONTRIBUTING.md) to get the app running locally and ways to help us.
+
+## Works under progress:
+
+- [x] Brainstorm the app and database design :heavy_check_mark:
+- [ ] Design a logo for our organization and Notes Ever app :running:
+- [ ] Implement initial design of landing page using semantic UI :running:
+- [ ] Learn about Google's OAuth :running:
