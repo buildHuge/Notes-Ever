@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 python-dotenv = "*"
+pylint = "*"
 
 [packages]
 flask = "*"
