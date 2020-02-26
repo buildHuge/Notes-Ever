@@ -1,6 +1,6 @@
 import flask
 
-auth = flask.Blueprint('Auth',__name__)
+auth = flask.Blueprint('auth', __name__)
 
 @auth.route("/login")
 def login():
