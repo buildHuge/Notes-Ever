@@ -1,8 +1,8 @@
 import flask
 
-from notes_ever import app
+main = flask.Blueprint('site',__name__)
 
-@app.route("/")
+@main.route("/")
 def index():
     return flask.render_template("index.html")
     
