@@ -6,3 +6,12 @@ verify_ssl = true
 [packages]
 flask = "*"
 gunicorn = "*"
+requests = "*"
+oauthlib = "*"
+pyopenssl = "*"
+flask-login = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+
+[dev-packages]
+python-dotenv = "*"
