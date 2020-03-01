@@ -22,6 +22,12 @@
     font-size: 1.7em;
     font-weight: normal;
   }
+  .padding-space
+  {
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+
+  }
 
   .ui.vertical.stripe {
     padding: 8em 0em;
@@ -71,7 +77,10 @@
     {
       font-size: 50px !important;
     }
-  
+    .padding-space
+    {
+      display: none;
+    }
     .sub-heading-in-mobile
     {
       font-size: 20px !important;
