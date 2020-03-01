@@ -7,7 +7,7 @@
     <title>Notes Ever: {% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="../static/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <script src="../static/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../static/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </head>
@@ -17,11 +17,8 @@
       <!-- Sidebar Menu -->
       <div class="ui vertical inverted sidebar menu">
         <a class="active item">Home</a>
-        <a class="item">Work</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a>
+        <a class="item">Features</a>
         <a class="item">Login</a>
-        <a class="item">Signup</a>
       </div>
       
       
@@ -35,26 +32,21 @@
                   <i class="sidebar icon large"></i>
                 </a>
                 <a class="active item hide-in-mobile">Home</a>
-                <a class="item hide-in-mobile">Work</a>
-                <a class="item hide-in-mobile">Company</a>
-                <a class="item hide-in-mobile">Careers</a>
+                <a class="item hide-in-mobile">Features</a>
+                <a class="item hide-in-mobile">About</a>
                 <div class="right item row ">
-                  <a style="right: 15%;" class="ui inverted button hide-in-mobile ">Log in</a>
-                  <a class="ui inverted button hide-in-mobile">Sign Up</a>
+                  <button class="ui inverted button hide-in-mobile">Login With Google</button>
                 </div>
               </div>
               <div>
-                <div>
                     {% block main %}
                     
                     {% endblock %}
-                </div>
               </div>
             </div>      
           </div>
         </div>
       </header>
-    
     <footer>
         <div class="ui inverted vertical footer segment">
             <div class="ui container">

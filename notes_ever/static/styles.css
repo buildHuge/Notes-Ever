@@ -54,16 +54,29 @@
   .footer.segment {
     padding: 5em 0em;
   }
-
+  .padding-right
+  {
+    padding-right: 5%;
+  }
   .secondary.pointing.menu .toc.item {
     display: none;
   }
+  
 
   @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
       display: none !important;
-      
     }
+    .heading-in-mobile
+    {
+      font-size: 50px !important;
+    }
+  
+    .sub-heading-in-mobile
+    {
+      font-size: 20px !important;
+    }
+    
     .hide-in-mobile
     {
         visibility: hidden;
