@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Notes Ever: {% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Notes Ever: {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../static/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </head>
 
 <body>
 
-    <main>
-        {% block main %}{% endblock %}
-    </main>
-    
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Features</a>
+    <a class="item">Login</a>
+  </div>
+
+  <!-- Page Contents -->
+  <div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment">
+      <div class="ui container">
+
+        <header>
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+              <i class="sidebar icon large"></i>
+            </a>
+            <a class="active item hide-in-mobile">Home</a>
+            <a class="item hide-in-mobile">Features</a>
+            <a class="item hide-in-mobile">About</a>
+            <div class="right item row">
+              <button class="ui inverted button hide-in-mobile">Login With Google</button>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          {% block main %}{% endblock %}
+        </main>
+
+        <footer>
+          <p class="description">Built with passion by the <strong><a
+                href="https://github.com/buildHuge/Notes-Ever">buildHuge Team</strong></a>.</p>
+        </footer>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
