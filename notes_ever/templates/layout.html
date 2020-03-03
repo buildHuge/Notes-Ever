@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Notes Ever: {% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Notes Ever: {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 </head>
 
 <body>
 
-    <main>
+  
+    <div class="ui inverted vertical masthead center aligned segment">
+      <div class="ui container">
+      <!-- Primary Navbar -->
+      <header>
+        <div class="ui large secondary inverted pointing menu">
+          <a class="active item hide-in-mobile">Home</a>
+          <a class="item hide-in-mobile">Features</a>
+          <a class="item hide-in-mobile">About</a>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main>
         {% block main %}{% endblock %}
-    </main>
-    
+      </main>
+
+      <!-- Footer content -->
+      <footer>
+        <p class="description">Built with passion by the <strong><a
+              href="https://github.com/buildHuge/Notes-Ever">buildHuge Team</strong></a>.</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </body>
 </html>
