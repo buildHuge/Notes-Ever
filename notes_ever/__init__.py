@@ -4,15 +4,16 @@ import flask_login
 import flask_migrate
 import config 
 
-from notes_ever.site.routes import main
-from notes_ever.site.Auth import auth
+from notes_ever.auth import auth_bp
+from notes_ever.main import main_bp
 
 ##initializes the app
 app = flask.Flask(__name__)
 
+
 ##register-Blueprints
-app.register_blueprint(main)
-app.register_blueprint(auth)
+app.register_blueprint(main_bp)
+app.register_blueprint(auth_bp)
 
 ##configuers the app
 app.config.from_object(config.Config)
@@ -24,5 +25,5 @@ db = flask_sqlalchemy.SQLAlchemy(app)
 migrate = flask_migrate.Migrate(app, db)
 
 ##imports the main routes of the app
-from notes_ever.site import Auth
-from notes_ever.site import routes
+from notes_ever.auth import routes
+from notes_ever.main import routes

@@ -55,11 +55,11 @@ You need the latest version of [Python](https://www.python.org/) to run the app.
 # Installs pipenv globally
 pip install pipenv
 
-# The below command installs dependencies in a virtualenv using python 3.x.x
-pipenv --three install --dev
+# Activates virtualenv using python 3 and clears cache
+pipenv shell --three
 
-# Activates virtualenv subshell
-pipenv shell
+# The below command installs dependencies in a virtualenv using python 3.x.x
+pipenv install --dev
 
 # Copies `sample.env` to `.env` to allow loading of env vars
 # You can paste your API credentials in `.env` file
