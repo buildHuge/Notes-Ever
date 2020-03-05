@@ -12,6 +12,7 @@ pyopenssl = "*"
 flask-login = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
+hashlib = "*"
 
 [dev-packages]
 python-dotenv = "*"
