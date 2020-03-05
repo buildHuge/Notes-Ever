@@ -1,10 +1,9 @@
 import os
-import tempfile
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
-    """All the configurations required to run the web application"""
+    """Configurations required to run the web application"""
 
     # Set SECRET_KEY to sign cookies and for other security related tools
     SECRET_KEY = os.environ.get("SECRET_KEY")
